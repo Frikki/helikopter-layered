@@ -1,0 +1,23 @@
+{
+    "name": "helikopter-layered-app",
+    "version": "0.0.0",
+    "repository": "https://github.com/Frikki/helikopter-layered.git",
+    "license": "MIT",
+    "author": "Frederik Krautwald <fkrautwald@gmail.com>",
+    "files": ["dist"],
+    "main": "dist/index.js",
+    "module": "dist/index.m.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "microbundle -f es,cjs",
+        "prepare": "yarn build",
+        "test": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@helikopter/core": "^0.2.0"
+    },
+    "devDependencies": {
+        "microbundle": "0.11.0",
+        "typescript": "3.5.2"
+    }
+}

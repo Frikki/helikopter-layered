@@ -1,0 +1,17 @@
+{
+    "name": "helikopter-layered",
+    "version": "0.0.0",
+    "private": true,
+    "description": "A collection of libraries to logically separate layers in an application build with helikopter.",
+    "repository": "https://github.com/Frikki/helikopter-layered.git",
+    "license": "MIT",
+    "author": "Frederik Krautwald <fkrautwald@gmail.com>",
+    "workspaces": ["packages/*"],
+    "scripts": {
+        "build": "lerna run build --stream",
+        "test": "lerna run test --stream"
+    },
+    "devDependencies": {
+        "lerna": "^3.15.0"
+    }
+}
